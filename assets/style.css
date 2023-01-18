@@ -1,0 +1,201 @@
+:root {
+    color-scheme: light dark;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-feature-values --nabla {
+    font-family: 'Nabla';
+    base-palette: 0;
+
+}
+
+@font-feature-values --monofett {
+    font-family: 'Monofett';
+    base-palette: 0;
+}
+
+
+body {
+    background-image: url('a.jpg');
+    width: 900px;
+    margin: 26px auto;
+    font-family: serif, 'Noto serif', Times,
+}
+
+p,
+input,
+li {
+    font-family: sans-serif, Tahoma, Geneva;
+    color: #2a2a2a;
+}
+
+p,
+li {
+    font-size: 12px;
+    ;
+
+}
+
+body header {
+    background-image: url('logoamazigh.png');
+}
+
+header img {
+    float: left;
+    height: 150px;
+    margin: auto;
+
+}
+
+nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: armenian;
+    flex: 2;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 2;
+
+}
+
+div.gallery {
+    border: 1px solid rgb(71, 5, 224);
+}
+
+div.gallery:hover {
+    border: 1px solid rgb(206, 9, 9);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: justify;
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+form{
+    margin-top: 70px;
+}
+nav a,
+nav span {
+    font-family: 'Monofett';
+    display: inline-block;
+    font-size: 25px;
+    height: 40px;
+    line-height: 2.7;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h2,
+h3 {
+    font-family: sans-serif, 'Noto sans', Helvetica;
+}
+
+table {
+    border-spacing: 6px 0px;
+    padding: 0px;
+    border: 1px solid rgb(70, 189, 90);
+}
+
+
+td {
+    font-family: serif, 'Times New Roman', Times;
+    width: 4px;
+    height: 4px;
+    text-align: center;
+    vertical-align: ba middle;
+    border: solid 1px;
+}
+
+th {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 14px;
+    background-color: aquamarine;
+    border: solid 1px;
+    padding-bottom: 1px;
+    ;
+}
+
+h2 {
+    background-color: rgba(81, 224, 37, 0.466);
+    padding: 5px 11px;
+    font-size: 18px;
+}
+
+h3 {
+    background-color: rgba(224, 211, 37, 0.466);
+    padding: 5px 11px;
+    font-size: 14px;
+
+}
+
+h1 {
+    font-family: 'Nabla';
+    font-size: 60px;
+    text-align: left;
+    color: blue;
+
+    letter-spacing: 10px;
+}
+
+img {
+    float: left;
+    margin: 40px 30px;
+
+}
+
+p {
+    text-align: justify;
+    padding: 6px 20px 6px 6px;
+}
+
+abbr {
+    color: chocolate;
+}
+
+@media (hover: hover) {
+    abbr:hover {
+        color: rgb(10, 94, 10);
+        transition-duration: 1s;
+    }
+}
+
+@media not all and (hover: hover) {
+    abbr::after {
+        content: ' (' attr(title) ')';
+    }
+}
+
+footer {
+    background-color: rgba(255, 248, 220, 0.212);
+    margin-top: 16px;
+    padding: 17px 16px 5px 16px;
+    font-family: sans-serif, 'Times New Roman', Times;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imazighen</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>        @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap'); 
+</style>
+</head>
+
+<body>
+    <header>
+<h1>AL AMAZIGH</h1> <img src="assets/logoamazigh.png" alt="logoamazigh">        <nav>
+            <ul>
+                <li><a href="index.html">home</a> </li>
+                <li><a href="gallery.html">gallery</a> </li>
+                <li><a href="multimedia.html">multimedia</a> </li>
+                <li><a href="culture.html">culture</a></li>
+                <li><a href="Tifinagh.html">Tifinagh</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <form method="post" action="http://:10.2.217.254:8080/process-form.php">
+                <h2>Contact form</h2>
+                <section>
+                    <fieldset>
+                        <legend>
+                            <h3>Personal data</h3>
+                        </legend>
+                        <p>
+                            <label for="name">
+                                <span>Name: </span>
+                            </label>
+                            <input type="text" id="name" name="name">
+                        </p>
+
+                        <p>
+                            <label for="mail">
+                                <span>E-mail: </span>
+                            </label>
+                            <input type="email" id="mail" name="email">
+                        </p>
+                        <p>
+                            <label for="phone">
+                                <span>Phone: </span>
+                            </label>
+                            <input type="tel" id="phone" name="tel">
+                        </p>
+                        <p>
+                            <label for="contact">
+                                <span>please,contact me by:</span>
+                            </label>
+                            <select id="contact" name="contact">
+                                <option value="e-mail">email</option>
+                                <option value="postal mail">Postal mail</option>
+                                <option value="phone">phone</option>
+                            </select>
+                        </p>
+
+                    </fieldset>
+                </section>
+                <fieldset>
+                    <legend>Sex</legend>
+                    <label for="Male">
+                        <input type="radio" id="Male" name="sex" value="M">
+                        Male
+                    </label>
+                    <label for="Female">
+                        <input type="radio" id="Female" name="sex" value="F">
+                        Female
+                    </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>preferred language</legend>
+                    <p>
+                        <input type="checkbox" id="language_1" name="preferred_1" value="English">
+                        <label for="language_1">English</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="language_2" name="preferred_2" value="Castillian">
+                        <label for="language_2">Spanish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="language_3" name="preferred_3" value="Valencian">
+                        <label for="language_3">French</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <p>message:</p>
+                    </legend>
+                    <textarea cols="50" name="message" rows="8"></textarea>
+                    </p>
+                </fieldset>
+                <section>
+                    <button type="submit">Send form</button>
+                    <button type="reset">reset </button>
+                </section>
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>
