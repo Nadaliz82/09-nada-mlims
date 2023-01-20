@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imazighen</title>
     <link rel="stylesheet" href="assets/style.css">
-    <style>        @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap'); 
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
-<h1>AL AMAZIGH</h1> <img src="assets/logoamazigh.png" alt="logoamazigh">        <nav>
+        <h1>AL AMAZIGH</h1> <img src="assets/logoamazigh.png" alt="logoamazigh">
+        <nav>
             <ul>
                 <li><a href="index.html">home</a> </li>
                 <li><a href="gallery.html">gallery</a> </li>
@@ -28,6 +32,9 @@
         <article>
             <form method="post" action="http://:10.2.217.254:8080/process-form.php">
                 <h2>Contact form</h2>
+                <p>This page is to help you and to guide you to the good side to be able to learn Amazigh , it is
+                    recommended to enter the language with which you would like to learn and all the information
+                    requested</p>
                 <section>
                     <fieldset>
                         <legend>
@@ -66,7 +73,9 @@
                     </fieldset>
                 </section>
                 <fieldset>
-                    <legend>Sex</legend>
+                    <legend>
+                        <h3>Sex</h3>
+                    </legend>
                     <label for="Male">
                         <input type="radio" id="Male" name="sex" value="M">
                         Male
@@ -75,10 +84,12 @@
                         <input type="radio" id="Female" name="sex" value="F">
                         Female
                     </label>
-                    </p>
+
                 </fieldset>
                 <fieldset>
-                    <legend>preferred language</legend>
+                    <legend>
+                        <h3>preferred language</h3>
+                    </legend>
                     <p>
                         <input type="checkbox" id="language_1" name="preferred_1" value="English">
                         <label for="language_1">English</label>
@@ -94,10 +105,10 @@
                 </fieldset>
                 <fieldset>
                     <legend>
-                        <p>message:</p>
+                        <h3>message:</h3>
                     </legend>
                     <textarea cols="50" name="message" rows="8"></textarea>
-                    </p>
+
                 </fieldset>
                 <section>
                     <button type="submit">Send form</button>
