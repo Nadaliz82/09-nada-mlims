@@ -17,14 +17,19 @@ label {
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0px auto;
     overflow: auto;
     box-sizing: border-box;
-    border: 1px solid red;
+    /**border: 1px solid red;**/
 }
 
-
+@font-face {
+    font-family: 'Mermaid';
+    src: url('fonts/Mermaid\ Font/woff') format('woff'),
+        url('fonts/Mermaid\ Font/woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
 
 @font-feature-values --monofett {
     font-family: 'Monofett';
@@ -43,24 +48,12 @@ html {
 body {
 
     background-color: rgba(255, 228, 196, 0.295);
-    width: 900px;
-    margin: 26px auto;
-    border-image: url('border.png');
-
-}
-
-body {
-
-    background-color: rgba(255, 228, 196, 0.295);
     width: 1000px;
-    margin: 40px auto;
+    margin:auto;
     border-image-outset: 1 rem;
     border: 1.4rem solid;
     border-image: url('border.png') 200;
     border-image-outset: 0;
-
-
-
 }
 
 p,
@@ -93,27 +86,19 @@ nav {
     flex: 100%;
     display: flex;
 }
+
 nav ul {
     padding: 0;
     list-style-type: armenian;
     flex: 2;
     display: flex;
 }
-button{
-    background-color:  rgba(255, 94, 0, 0.596) ;
-    border-radius: 15px;
-    padding: 10px 50px;
-margin:0px 50px;
-    align-items: center;
-}
-button:hover{
-    background-color:#2a2a2a;
-}
 nav ul li {
-    margin: 1px;
+    margin: 1px auto;
     border: 2px solid rgba(255, 153, 0, 0.466);
     background-color: rgb(255, 231, 196);
     border-radius: 200px;
+    font-family: 'Mermaid', 'Franklin Gothic Medium', sans-serif;
 }
 
 nav ul li:hover {
@@ -126,39 +111,19 @@ nav li {
     text-align: center;
     flex: 2;
 
-
-
+}
+button {
+    background-color: rgba(255, 94, 0, 0.596);
+    border-radius: 15px;
+    padding: 10px 50px;
+    margin: 0px 50px;
+    align-items: center;
 }
 
-div.gallery {
-    border: 1px dashed rgb(189, 146, 5);
+button:hover {
+    background-color: #2a2a2a;
 }
 
-
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    border: 2px solid rgb(170, 90, 24);
-}
-
-div.desc {
-    padding: 15px;
-    text-align: justify;
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
 
 form {
     margin-top: 20px;
@@ -168,7 +133,7 @@ form {
 
 nav a,
 nav span {
-    font-family: 'Monofett', 'Franklin Gothic Medium', sans-serif;
+    
     display: inline-block;
     font-size: 25px;
     text-transform: uppercase;
@@ -191,30 +156,42 @@ h2,
 h3 {
     text-transform: uppercase;
 }
-
+#image{
+    
+    border-spacing: 6px 0px;
+        margin: 10px auto;
+        padding: 0px;
+        border: 1px solid rgba(0, 255, 149, 0.342);
+}
 table {
     border-spacing: 6px 0px;
+    margin: 10px auto;
     padding: 0px;
-    border: 1px solid rgb(70, 189, 90);
+    border:  1px solid rgba(0, 255, 149, 0.342);
+    border-radius: 15px ;
 }
 
+th>p {
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
 
 td {
     font-family: serif, 'Times New Roman', Times;
-    width: 4px;
-    height: 4px;
     text-align: center;
     vertical-align: ba middle;
-    border: solid 1px;
+    margin: auto;
 }
 
 th {
     font-family: sans-serif, Arial, Helvetica;
     font-size: 14px;
-    background-color: aquamarine;
-    border: solid 1px;
+    background-color: rgba(127, 255, 159, 0.637);
+    border-radius: 15px;
     padding-bottom: 1px;
-    ;
+    margin: auto;
+
 }
 
 h2 {
@@ -243,14 +220,14 @@ h1 {
 
 img {
     float: left;
-    margin: 40px 30px;
+    margin: auto;
 
 }
 
 p {
     text-align: justify;
     padding: 6px 20px 6px 6px;
-    margin: 10px 30px;
+    margin:20px 30px auto;
     font-family: 'Righteous', 'Courier New', monospace;
 }
 
