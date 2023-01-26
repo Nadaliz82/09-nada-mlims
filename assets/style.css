@@ -21,7 +21,7 @@ label {
     margin: 0px;
     overflow: auto;
     box-sizing: border-box;
-    /* border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 
@@ -93,14 +93,22 @@ nav {
     flex: 100%;
     display: flex;
 }
-
 nav ul {
     padding: 0;
     list-style-type: armenian;
     flex: 2;
     display: flex;
 }
-
+button{
+    background-color:  rgba(255, 94, 0, 0.596) ;
+    border-radius: 15px;
+    padding: 10px 50px;
+margin:0px 50px;
+    align-items: center;
+}
+button:hover{
+    background-color:#2a2a2a;
+}
 nav ul li {
     margin: 1px;
     border: 2px solid rgba(255, 153, 0, 0.466);
