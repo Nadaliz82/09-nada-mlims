@@ -3,17 +3,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border:solid 4px red;
 }
 
 /* Container */
 .container-fluid {
   max-width: 100%;
+  
 }
 
 .container {
   display :flex ;
   max-width: 980px;
   margin: 0 auto;
+  gap: 4px;
 }
 
 /* Flex Grid */
@@ -21,12 +24,15 @@
 .row { 
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
 .row > * {
   flex-shrink: 1;
   width: 100%;
   max-width: 100%;
+  border: 4px solid burlywood;
+  gap: 4px;
 }
 
 .col-1 {
