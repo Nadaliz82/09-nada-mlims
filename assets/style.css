@@ -3,7 +3,6 @@
     margin: 0 auto;
     overflow: auto;
     box-sizing: border-box;
-   /** border: 1px solid red;**/
 }
 
 html {
@@ -36,7 +35,7 @@ label {
 
 @font-feature-values --monofett {
     font-family: 'Monofett';
-    
+
 }
 
 
@@ -69,11 +68,11 @@ header img {
 
 }
 
-main{
-        border-image-outset: 1 rem;
-        border: 1.4rem solid;
-        border-image: url('border.png') 200;
-        border-image-outset: 0;
+main {
+    border-image-outset: 1 rem;
+    border: 1.4rem solid;
+    border-image: url('border.png') 200;
+    border-image-outset: 0;
 }
 
 nav ul {
@@ -93,12 +92,9 @@ nav ul li {
     border-radius: 15px;
     padding-left: 10px;
     font-family: "Monofett", 'Franklin Gothic Medium', sans-serif;
-    color:darkslategray;
+    color: darkslategray;
     text-align: center;
     flex: auto;
-
-
-
 }
 
 nav ul li:hover {
@@ -123,6 +119,7 @@ form {
     margin-top: 20px;
     padding: 10px 80px;
 
+
 }
 
 nav a,
@@ -145,14 +142,11 @@ h3 {
     text-transform: uppercase;
 }
 
-#image {
-display: block;
-    margin:auto;
-    padding: auto;
-    border: 6px solid rgba(3, 146, 86, 0.425);
-    max-width: 100%;
-        height: auto;
-        width: auto;
+figure {
+    float: left;
+    border: 1px solid black;
+    width: 25%;
+    overflow: auto;
 }
 
 table {
@@ -179,7 +173,6 @@ td {
     font-family: serif, 'Times New Roman', Times;
     text-align: center;
     margin: auto;
-
 }
 
 th {
@@ -229,9 +222,33 @@ img {
     height: auto;
     width: auto;
 
+
 }
+
 div iframe {
     overflow: auto;
+    border: 1px solid black;
+    width: 100%;
+}
+
+div.col-4 img,
+div.col-8 img {
+    border: darkorange solid 2px;
+}
+
+div.col-8 img:hover,
+div.col-4 img:hover {
+    border: dotted 2px orange;
+}
+
+div.col-4 p {
+    text-align: justify;
+    margin: 10px;
+}
+
+div.col-4 caption {
+    margin: 20px auto;
+    text-align: center;
 }
 
 p {
@@ -253,6 +270,13 @@ footer address {
     text-align: center;
 }
 
+footer {
+    border-image-outset: 1 rem;
+    border: 1.4rem solid;
+    border-image: url('border.png') 200;
+    border-image-outset: 0;
+}
+
 a:visited {
     color: rgb(2, 158, 93);
 }
@@ -265,4 +289,3 @@ a:active {
 a:hover {
     color: darkcyan;
 }
-
