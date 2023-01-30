@@ -10,18 +10,22 @@ html {
     font-family: 'Righteous', 'Courier New', monospace;
 }
 
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 
+@font-feature-values --monofett {
+    font-family: 'Monofett';
+}
+
+body {
     background-color: rgba(255, 228, 196, 0.295);
     width: 1000px;
     margin: 0 auto;
-
 }
 
 fieldset {
     margin: 10px;
 }
-
 
 input,
 label {
@@ -29,18 +33,7 @@ label {
     margin: 4px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
-
-@font-feature-values --monofett {
-    font-family: 'Monofett';
-
-}
-
-
-p,
-input,
-li {
+p,input,li {
     font-family: sans-serif, Tahoma, Geneva;
     color: #2a2a2a;
 }
@@ -48,8 +41,6 @@ li {
 p,
 li {
     font-size: 16px;
-    ;
-
 }
 
 body header {
@@ -64,7 +55,6 @@ header img {
     float: right;
     height: 150px;
     margin: auto;
-
 }
 
 main {
@@ -75,13 +65,10 @@ main {
 }
 
 nav ul {
-
     display: flex;
     align-content: space-around;
     gap: 10px 20px;
     align-items: stretch;
-
-
 }
 
 nav ul li {
@@ -106,7 +93,6 @@ button {
     border-radius: 15px;
     padding: 10px 20px;
     margin: 0px 350px;
-
 }
 
 button:hover {
@@ -119,23 +105,19 @@ form {
     padding: 10px 80px;
 }
 
-nav a,
-nav span {
+nav a, nav span {
     display: inline-block;
     font-size: 25px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-h2,
-h3 {
+h2, h3 {
     font-family: 'Righteous', 'Noto sans', Helvetica;
     font-size: 100px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
@@ -150,11 +132,10 @@ figure {
 table {
     border: 1px solid rgba(8, 10, 9, 0.568);
     border-radius: 15px;
-    margin-top:20px ;
+    margin-top: 20px;
 }
 
-th,
-td {
+th, td {
     border-spacing: 8px 0px;
     margin: 20px auto;
     padding: 0px;
@@ -182,7 +163,6 @@ th {
     border-radius: 15px solid rgb(2, 2, 15);
     margin: 10px auto;
     text-align: center;
-
 }
 
 h2 {
@@ -212,30 +192,32 @@ h1 {
 img.header {
     display: flex;
     margin: 10px auto;
-    
     width: 25%;
 }
-.header +p{
+
+.header+p {
     margin: 10px auto;
     width: 70%;
 }
+
 img.Name {
     display: flex;
     margin: 10px auto;
     width: 25%;
 }
-.Name +p {
+
+.Name+p {
     margin: 10px auto;
     width: 70%;
-overflow: auto;}
+    overflow: auto;
+}
+
 img {
     float: left;
     margin: auto;
     max-width: 100%;
     height: auto;
     width: auto;
-
-
 }
 
 div iframe {
