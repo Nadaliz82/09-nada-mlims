@@ -8,13 +8,13 @@
 /* Container */
 .container-fluid {
   max-width: 100%;
-
 }
 
 .container {
   display: flex;
   max-width: 980px;
   margin: 0 auto;
+ 
 }
 
 /* Flex Grid */
@@ -28,6 +28,7 @@
   flex-shrink: 1;
   width: 100%;
   max-width: 100%;
+  
 }
 
 .col-1 {
