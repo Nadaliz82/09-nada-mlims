@@ -45,7 +45,101 @@ p,
 li {
     font-size: 16px;
 }
+em {
+    position: relative;
+    color:red;
+}
 
+#em-1:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/maroc.png');
+    background-size: cover;
+    background-position: center;
+    background-position:2%;
+}
+#em-2:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Algeria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-3:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Tunisia.png');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-4:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Libya.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-5:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Mauritania.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-6:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/northern_Mali.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-7:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Burkina_Faso.png');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-9:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Niger.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
+#em-8:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-image: url('images/Egypt.png');
+    background-size: cover;
+    background-position: center;
+    background-position: 2%;
+}
 body header {
     background-image: url('logoamazigh.png');
     border-image-outset: 1rem;
