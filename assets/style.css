@@ -33,9 +33,12 @@ label {
     margin: 4px;
 }
 
-p,input,li {
+p,
+input,
+li {
     font-family: sans-serif, Tahoma, Geneva;
-    color: #2a2a2a;
+    color: black;
+    margin: 10px;
 }
 
 p,
@@ -45,7 +48,7 @@ li {
 
 body header {
     background-image: url('logoamazigh.png');
-    border-image-outset: 1 rem;
+    border-image-outset: 1rem;
     border: 1.4rem solid;
     border-image: url('border.png') 200;
     border-image-outset: 0;
@@ -58,7 +61,7 @@ header img {
 }
 
 main {
-    border-image-outset: 1 rem;
+    border-image-outset: 1rem;
     border: 1.4rem solid;
     border-image: url('border.png') 200;
     border-image-outset: 0;
@@ -66,26 +69,40 @@ main {
 
 nav ul {
     display: flex;
-    align-content: space-around;
-    gap: 10px 20px;
-    align-items: stretch;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 nav ul li {
-    display: flex;
     border: 2px solid rgba(255, 153, 0, 0.466);
     background-color: rgb(255, 231, 196);
     border-radius: 15px;
-    padding-left: 10px;
+    padding: 10px;
     font-family: "Monofett", 'Franklin Gothic Medium', sans-serif;
     color: darkslategray;
     text-align: center;
-    flex: auto;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 20px;
+    /* Nouvelle taille de police */
 }
 
 nav ul li:hover {
     background-color: rgb(255, 218, 196);
     border: 2px dotted rgba(255, 153, 0, 0.466);
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: darkcyan;
 }
 
 button {
@@ -100,24 +117,17 @@ button:hover {
 }
 
 
-form {
-    margin-top: 20px;
-    padding: 10px 80px;
-}
 
-nav a, nav span {
-    display: inline-block;
-    font-size: 25px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-h2, h3 {
+h2,
+h3 {
     font-family: 'Righteous', 'Noto sans', Helvetica;
     font-size: 100px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
     text-transform: uppercase;
 }
 
@@ -135,7 +145,8 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     border-spacing: 8px 0px;
     margin: 20px auto;
     padding: 0px;
@@ -165,12 +176,20 @@ th {
     text-align: center;
 }
 
+h4 {
+    background-color: rgba(42, 61, 37, 0.466);
+    border-radius: 15px;
+    padding: 5px 11px;
+    font-size: 12px;
+    margin: 10px;
+}
+
 h2 {
     background-color: rgba(42, 61, 37, 0.466);
     border-radius: 15px;
-    margin: 4px;
     padding: 5px 11px;
     font-size: 18px;
+    margin: 10px;
 }
 
 h3 {
@@ -178,7 +197,7 @@ h3 {
     border-radius: 15px;
     padding: 5px 11px;
     font-size: 14px;
-    margin: 4px;
+    margin: 10px;
 }
 
 h1 {
@@ -186,7 +205,7 @@ h1 {
     font-size: 100px;
     text-align: center;
     letter-spacing: 10px;
-    margin: 4px;
+    margin: 10px;
 }
 
 img.header {
@@ -214,10 +233,9 @@ img.Name {
 
 img {
     float: left;
-    margin: auto;
+    margin-right: 10px;
     max-width: 100%;
     height: auto;
-    width: auto;
 }
 
 div iframe {
@@ -236,20 +254,22 @@ div.col-4 img:hover {
     border: dotted 2px orange;
 }
 
-div.col-4 p {
+div.col-4 p,
+div.col-8 p {
     text-align: justify;
     margin: 10px;
 }
 
-div.col-4 caption {
+div.col-4 caption,
+div.col-8 caption {
     margin: 20px auto;
     text-align: center;
 }
 
 p {
     text-align: justify;
-    padding: 6px 20px 6px 6px auto;
-    margin: 20px 30px auto;
+    padding: 6px 20px;
+    margin: 20px auto;
     font-family: 'Righteous', 'Courier New', monospace;
 }
 
@@ -259,14 +279,14 @@ abbr {
 
 footer address {
     background-color: rgba(255, 248, 220, 0.212);
-    margin: 16px 30px auto;
+    margin: 16px auto;
     padding: 17px 16px 5px 16px;
     font-family: 'Times New Roman', sans-serif, Times;
     text-align: center;
 }
 
 footer {
-    border-image-outset: 1 rem;
+    border-image-outset: 1rem;
     border: 1.4rem solid;
     border-image: url('border.png') 200;
     border-image-outset: 0;
@@ -283,4 +303,48 @@ a:active {
 
 a:hover {
     color: darkcyan;
+}
+
+form {
+    margin-top: 20px;
+    padding: 10px 80px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+    background-color: rgba(255, 94, 0, 0.596);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+    background-color: #2a2a2a;
 }
