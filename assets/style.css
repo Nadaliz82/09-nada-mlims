@@ -233,42 +233,6 @@ figure {
     margin: 20px 30px;
 }
 
-table {
-    border: 1px solid rgba(8, 10, 9, 0.568);
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-th,
-td {
-    border-spacing: 8px 0px;
-    margin: 20px auto;
-    padding: 0px;
-    border: 1px solid rgba(9, 12, 11, 0.342);
-    border-radius: 15px;
-    padding-bottom: 1px;
-}
-
-th>p {
-    font-size: 12px;
-    text-align: center;
-    margin: auto;
-}
-
-td {
-    font-family: serif, 'Times New Roman', Times;
-    text-align: center;
-    margin: auto;
-}
-
-th {
-    font-family: Cambria, Cochin, Georgia, Times;
-    font-size: 14px;
-    background-color: rgba(28, 116, 199, 0.637);
-    border-radius: 15px solid rgb(2, 2, 15);
-    margin: 10px auto;
-    text-align: center;
-}
 
 h4 {
     background-color: rgba(42, 61, 37, 0.466);
@@ -441,4 +405,28 @@ form button[type="reset"] {
 form button[type="submit"]:hover,
 form button[type="reset"]:hover {
     background-color: #2a2a2a;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+
+}
+
+table th,
+table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(81, 80, 78, 0.896);
+    font-weight: rgb(222, 236, 169) bold;
+}
+
+table th {
+    background-color: #6c5aceb3;
+    font-weight: black  bold;
+}
+
+table tr:hover {
+    background-color: #6c5aceb3;
+    font-weight: black bold;
 }
